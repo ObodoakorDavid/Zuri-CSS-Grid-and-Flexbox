@@ -1,0 +1,172 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  height: 100vh;
+}
+
+/* =================  NavBar Styling ================= */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: hsl(179, 100%, 13%);
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+a:hover {
+  color: hsl(31, 77%, 52%);
+}
+
+/* ================= Styling For CSS Flexbox ================= */
+
+.flexbox-wrapper {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.flexbox-container {
+  display: flex;
+  padding-top: 100px;
+  flex-wrap: wrap;
+}
+
+.flexbox-items {
+  padding: 50px;
+  min-width: 200px;
+}
+
+.flexbox-items h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0, 0%, 95%);
+  padding-bottom: 30px;
+}
+.flexbox-items p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  color: hsl(0, 0%, 100%, 0.75);
+  padding-bottom: 70px;
+}
+.flexbox-items img {
+  padding-bottom: 30px;
+}
+.flexbox-items button {
+  border: 2px solid hsl(0, 0%, 95%);
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.item1 {
+  background-color: hsl(31, 77%, 52%);
+  flex: 1;
+  /* border-radius: 10px; */
+}
+.item2 {
+  background-color: hsl(184, 100%, 22%);
+  /* border-radius: 10px; */
+  flex: 1;
+}
+.item3 {
+  background-color: hsl(179, 100%, 13%);
+  /* border-radius: 10px; */
+  flex: 1;
+}
+.item1 button {
+  color: hsl(31, 77%, 52%);
+}
+.item2 button {
+  color: hsl(184, 100%, 22%);
+}
+.item3 button {
+  color: hsl(179, 100%, 13%);
+}
+
+.item1 button:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+.item2 button:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+.item3 button:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+/* ================= Media Query For CSS Grid ================= */
+
+@media (min-width: 768px) {
+  .item1 {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .item3 {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+/* ================= Styling For CSS Grid ================= */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: minmax(80px, auto);
+  gap: 10px;
+  margin: 40px auto;
+  max-width: 700px;
+}
+
+.grid-items {
+  background-color: red;
+}
+.grid-item-1 {
+  grid-row: span 2;
+  grid-column: span 3;
+  background-color: orangered;
+}
+
+.grid-item-2 {
+  grid-row: span 2;
+  background-color: orange;
+}
+
+.grid-item-3 {
+  grid-row: span 2;
+  grid-column: span 2;
+  background-color: green;
+}
+
+.grid-item-4 {
+  grid-row: span 1;
+  grid-column: span 2;
+  background-color: blue;
+}
+.grid-item-5 {
+  grid-row: span 1;
+  grid-column: span 2;
+  background-color: blue;
+}
+
+/* ================= Styling For CSS Grid ================= */
